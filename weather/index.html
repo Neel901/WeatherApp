@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Monitoring System</h1>
+
+        <!-- Dropdown to select temperature unit -->
+        <div class="temperature-unit-selector">
+            <label for="temp-unit">Select Temperature Unit:</label>
+            <select id="temp-unit">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <button id="change-unit">Change Unit</button>
+        </div>
+
+        <!-- Weather data container -->
+        <div id="weather-container"></div>
+
+        <!-- Alerts container (for threshold alerts) -->
+        <div id="alerts-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
