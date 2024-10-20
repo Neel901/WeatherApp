@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "12f1c0b3-a053-414f-9e7c-805dcf2df70e",
+		"name": "weatherapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30669177"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/weather/summary",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"city\": \"Delhi\",\r\n  \"date\": \"2024-10-20\",\r\n  \"averageTemp\": 40.00,\r\n  \"maxTemp\": 20.00,\r\n  \"minTemp\": 21.00,\r\n  \"dominantCondition\": \"SUNNY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/weather/summary",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"weather",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/weather/aggregates",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"city\": \"Delhi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/weather/aggregates?city=Delhi&date=2024-10-20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"weather",
+						"aggregates"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Delhi"
+						},
+						{
+							"key": "date",
+							"value": "2024-10-20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actuator",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/actuator/health",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
