@@ -5,7 +5,7 @@ It has capability to send alerts whenever threshold is breached.
 <br>
 <img src="assets/wmsui.png">
 ## Tech Stack
-The backend is built with Spring Boot, while the frontend utilizes JavaScript. The database in use is MySQL.
+The backend is built with Spring Boot, while the frontend utilizes HTML CSS JavaScript. The database in use is MySQL.
 
 ## Pre-Requisite - 
 1. An IDE of your choice (IntelliJ used here)
