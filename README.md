@@ -30,13 +30,6 @@ The backend is built with Spring Boot, while the frontend utilizes JavaScript. T
 4. To run the frontend:
     1. Open the `frontend` directory in VS Code.
     2. Make sure you have `Live Server` extension added in VS Code.
-    3. Create a file `env.js` in `frontend` directory.
-    4. Add the following content - 
-    ```
-    export const config = {
-        API_KEY: "<your_api_key>",
-    };
-    ```
-    1. Now open `frontend/index.html` file with `Live Server`.
-    2. You should be seeing weather data now.
+    3. Now open `frontend/index.html` file with `Live Server`.
+    4. You should be seeing weather data now.
   
