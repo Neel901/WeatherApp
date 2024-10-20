@@ -23,7 +23,7 @@ The backend is built with Spring Boot, while the frontend utilizes HTML CSS Java
     2. Run `mvn clean install`
     3. Add run/debug configurations in IntelliJ.
     4. Add a new configuration for Application as shown -
-    5. ![image](https://github.com/user-attachments/assets/6c70f8af-a210-4791-a997-2fef3d277ed5)
+    5. <img src="assets/wms.png">
     6. Run the server
     7. Use the curl to verify the server is up `curl --location 'localhost:8080/actuator/health'`
     8. Postman api collection is available in file `weatherapp.postman_collection.json` 
