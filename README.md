@@ -3,7 +3,7 @@ This is a weather app which calculates daily average, max, min and dominant cond
 Cities which are included are Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad. 
 It has capability to send alerts whenever threshold is breached.
 <br>
-
+![image](assets/wms.png)
 ## Tech Stack
 The backend is built with Spring Boot, while the frontend utilizes JavaScript. The database in use is MySQL.
 
@@ -28,6 +28,15 @@ The backend is built with Spring Boot, while the frontend utilizes JavaScript. T
     7. Use the curl to verify the server is up `curl --location 'localhost:8080/actuator/health'`
     8. Postman api collection is available in file `weatherapp.postman_collection.json` 
 4. To run the frontend:
-    1. Open the `frontend/index.html` file.
+    1. Open the `frontend` directory in VS Code.
+    2. Make sure you have `Live Server` extension added in VS Code.
+    3. Create a file `env.js` in `frontend` directory.
+    4. Add the following content - 
+    ```
+    export const config = {
+        API_KEY: "<your_api_key>",
+    };
+    ```
+    1. Now open `frontend/index.html` file with `Live Server`.
     2. You should be seeing weather data now.
   
