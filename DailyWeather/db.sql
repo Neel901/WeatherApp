@@ -1,3 +1,6 @@
+create database weather_monitoring;
+
+use weather_monitoring;
 CREATE TABLE `daily_weather_summary` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `city` varchar(255) DEFAULT NULL,
