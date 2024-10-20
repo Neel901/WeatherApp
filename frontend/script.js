@@ -1,4 +1,6 @@
-const apiKey = '3deecbe90679cf4893ae28d4b8811578';
+// import { config } from './env.js';
+
+const apiKey = "3deecbe90679cf4893ae28d4b8811578";
 const cities = ['Delhi', 'Mumbai', 'Chennai', 'Bangalore', 'Kolkata', 'Hyderabad'];
 const weatherContainer = document.getElementById('weather-container');
 const temperatureUnitSelector = document.getElementById('temp-unit');

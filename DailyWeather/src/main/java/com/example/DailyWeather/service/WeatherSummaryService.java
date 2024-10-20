@@ -1,4 +1,4 @@
-package com.example.DailyWeather;
+package com.example.DailyWeather.service;
 
 import com.example.DailyWeather.dto.WeatherSummaryAggregates;
 import com.example.DailyWeather.model.WeatherSummary;

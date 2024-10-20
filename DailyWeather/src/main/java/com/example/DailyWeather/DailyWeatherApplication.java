@@ -1,4 +1,4 @@
-package com.example.DailyWeather.service;
+package com.example.DailyWeather;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
