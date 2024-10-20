@@ -1,4 +1,4 @@
-package com.example.DailyWeather;
+package com.example.DailyWeather.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,5 +1,8 @@
 package com.example.DailyWeather;
 
+import com.example.DailyWeather.dto.WeatherSummaryAggregates;
+import com.example.DailyWeather.model.WeatherSummary;
+import com.example.DailyWeather.repository.WeatherSummaryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +32,7 @@ public class WeatherSummaryService {
         List<WeatherSummary> summaries = repository.findByCityAndDate(city, date);
 
         if (summaries.isEmpty()) {
-            return null; // Or return a default value
+            return null; 
         }
 
         BigDecimal averageTemp = summaries.stream()
@@ -47,7 +50,7 @@ public class WeatherSummaryService {
                 .reduce(BigDecimal::min)
                 .orElse(BigDecimal.ZERO);
 
-        // Calculate dominant condition
+        
         String dominantCondition = determineDominantCondition(summaries);
 
         return new WeatherSummaryAggregates(averageTemp, maxTemp, minTemp,dominantCondition);
@@ -55,13 +58,13 @@ public class WeatherSummaryService {
     private String determineDominantCondition(List<WeatherSummary> summaries) {
         Map<String, Integer> conditionFrequency = new HashMap<>();
 
-        // Count frequency of each condition
+        
         for (WeatherSummary summary : summaries) {
             String condition = summary.getDominantCondition();
             conditionFrequency.put(condition, conditionFrequency.getOrDefault(condition, 0) + 1);
         }
 
-        // Determine the dominant condition
+        
         String dominantCondition = null;
         int maxCount = 0;
 

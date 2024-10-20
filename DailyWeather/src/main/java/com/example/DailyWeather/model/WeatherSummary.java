@@ -1,4 +1,4 @@
-package com.example.DailyWeather;
+package com.example.DailyWeather.model;
 
 
 import jakarta.persistence.Entity;
