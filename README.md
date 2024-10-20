@@ -3,7 +3,7 @@ This is a weather app which calculates daily average, max, min and dominant cond
 Cities which are included are Delhi, Mumbai, Chennai, Bangalore, Kolkata, Hyderabad. 
 It has capability to send alerts whenever threshold is breached.
 <br>
-<img src="assets/wms.png">
+<img src="assets/wmsui.png">
 ## Tech Stack
 The backend is built with Spring Boot, while the frontend utilizes JavaScript. The database in use is MySQL.
 
