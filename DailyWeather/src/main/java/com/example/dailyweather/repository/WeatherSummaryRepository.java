@@ -1,6 +1,6 @@
-package com.example.DailyWeather.repository;
+package com.example.dailyweather.repository;
 
-import com.example.DailyWeather.model.WeatherSummary;
+import com.example.dailyweather.model.WeatherSummary;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;

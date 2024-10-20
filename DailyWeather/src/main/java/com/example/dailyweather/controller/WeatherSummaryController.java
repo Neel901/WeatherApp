@@ -1,8 +1,8 @@
-package com.example.DailyWeather.controller;
+package com.example.dailyweather.controller;
 
-import com.example.DailyWeather.dto.WeatherSummaryAggregates;
-import com.example.DailyWeather.dto.WeatherSummaryRequest;
-import com.example.DailyWeather.service.WeatherSummaryService;
+import com.example.dailyweather.dto.WeatherSummaryAggregates;
+import com.example.dailyweather.dto.WeatherSummaryRequest;
+import com.example.dailyweather.service.WeatherSummaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

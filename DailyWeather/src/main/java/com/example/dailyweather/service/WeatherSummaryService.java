@@ -1,8 +1,8 @@
-package com.example.DailyWeather.service;
+package com.example.dailyweather.service;
 
-import com.example.DailyWeather.dto.WeatherSummaryAggregates;
-import com.example.DailyWeather.model.WeatherSummary;
-import com.example.DailyWeather.repository.WeatherSummaryRepository;
+import com.example.dailyweather.dto.WeatherSummaryAggregates;
+import com.example.dailyweather.model.WeatherSummary;
+import com.example.dailyweather.repository.WeatherSummaryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
